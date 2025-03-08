@@ -4,6 +4,8 @@
   ">
   <div class="list-group list-reset">
     <button *ngFor="let tag of tags"
+    #txtTagbutton
+    (click)="ResearchTag(tag)"
     class="list-group-item list-group-item-action"
     routerLink="/home">
       {{ tag | titlecase }}
